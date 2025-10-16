@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://unpkg.com/sanitize.css');
+
+body {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4) no-repeat center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  overflow-x: hidden;
+}
+
+#toggle-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#toggle-mode:hover {
+  background: #e55a5a;
+}
+
+.long-form {
+  display: block;
+}
+
+.simple-link-mode .long-form {
+  display: none;
+}
+
+#profile-pic {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.link-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.link-card:hover {
+  transform: scale(1.05);
+}
+
+.link-card a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+iframe {
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  margin: 20px 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e55a5a;
+}
+
+.link-input {
+  display: flex;
+  gap: 10px;
+}
+
+.cta {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta:hover {
+  color: #e55a5a;
+}
+
+@media (max-width: 600px) {
+  .link-input {
+    flex-direction: column;
+  }
+  #profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}

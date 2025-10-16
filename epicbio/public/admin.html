@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://*.instagram.com; frame-src https://www.youtube.com;">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+  <title>Epic.bio - Admin Panel</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Admin Panel</h1>
+    <section>
+      <h2>Generate Invite Code</h2>
+      <form id="invite-form">
+        <input type="email" id="invite-email" placeholder="Email for Invite" required>
+        <input type="text" id="invite-ig-username" placeholder="Instagram Username" required>
+        <button type="submit">Generate Invite Code</button>
+      </form>
+      <p id="invite-code"></p>
+    </section>
+    <section>
+      <h2>Template Settings</h2>
+      <label><input type="checkbox" id="enable-templates"> Enable Templates ($5/mo)</label>
+      <button onclick="saveSettings()">Save Settings</button>
+    </section>
+    <section>
+      <h2>Analytics</h2>
+      <p>Total Users: <span id="total-users"></span></p>
+      <p>Total Bio Views: <span id="total-views"></span></p>
+      <p>Total Purchases: <span id="total-purchases"></span></p>
+    </section>
+    <a href="/dashboard">Back to Dashboard</a>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/assets/script.js"></script>
+</body>
+</html>

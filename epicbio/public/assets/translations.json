@@ -1,0 +1,18 @@
+{
+  "en": {
+    "welcome": "Welcome to Epic.bio",
+    "signup": "Sign Up",
+    "edit_bio": "Edit Your Bio",
+    "toggle_simple": "Switch to Simple Link Mode",
+    "toggle_long_form": "Switch to Long-Form Bio Mode",
+    "get_epic_bio": "Get Your Own Epic.bio"
+  },
+  "es": {
+    "welcome": "Bienvenido a Epic.bio",
+    "signup": "Regístrate",
+    "edit_bio": "Editar tu biografía",
+    "toggle_simple": "Cambiar a modo de enlaces simples",
+    "toggle_long_form": "Cambiar a modo de biografía completa",
+    "get_epic_bio": "Obtén tu propio Epic.bio"
+  }
+}
